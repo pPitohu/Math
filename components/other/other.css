@@ -1,0 +1,25 @@
+.biology__content {
+    text-align: center;
+}
+
+.content__theory {
+    background-color: #EEF6F6;
+    background-image: url(../../assets/img/fon.png);
+    z-index: -1;
+    box-shadow: inset 0px 0px 15px 10px #00000033;
+    width: 100vw;
+}
+.theory__paragraph p,
+.theory__title p{
+    color: #545A51;
+}
+.theory__title {
+    color: #545A51;
+    text-align: left;   
+    margin: 0px 180px;
+}
+
+.theory__paragraph{
+    margin: 0px 180px;
+    text-align: left;
+}

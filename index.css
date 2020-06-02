@@ -1,0 +1,322 @@
+/*   Description    */
+
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/fonts/Roboto-Medium.ttf);
+}
+
+
+/* Cardbox */
+
+.cardbox__card {
+    align-items: center;
+    width: 100vw;
+    height: 511px;
+    box-shadow: inset 0px 10px 15px 0px #00000033;
+}
+
+.card__title {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: Roboto, 'Calibri', sans-serif;
+}
+
+.card {
+    align-items: stretch;
+    justify-content: space-around;
+    width: 900px;
+    margin-right: 255px;
+}
+
+.card__part {
+    display: block;
+    text-align: left;
+}
+
+.card__part img {
+    width: 100%;
+    display: block;
+    border-radius: 200px;
+    box-shadow: 0px 1px 9px 1px #00000055;
+}
+
+.card__line {
+    width: 4px;
+    height: 300px;
+    background-color: #EEF6F6;
+    margin: 0px 15px;
+}
+
+.card__part h2,
+.card__part a,
+.card__part p {
+    margin-bottom: 5px;
+    font-size: 30px;
+    display: block;
+}
+
+.card__part h2 {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.card__part a {
+    cursor: pointer;
+    transition: 0.75s ease;
+}
+
+.card__part a::after {
+    background-color: #EEF6F6;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    transition: 0.75s ease;
+}
+
+.card__part a:hover::after {
+    width: 100%;
+}
+
+
+/* copyright */
+
+.biology__copyright {
+    height: 100px;
+    width: 100vw;
+}
+
+.biology__copyright div h1 {
+    color: #545A51;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.copyright__line {
+    margin-top: 6px;
+    background-color: #CB850E;
+    height: 6px;
+    width: 100vw;
+}
+
+
+/* colors */
+
+.first {
+    background-color: #BC3838;
+}
+
+.second {
+    background-color: #38C18A;
+}
+
+.third {
+    background-color: #1884B5;
+}
+
+.fourth {
+    background-color: #BCB719;
+}
+
+.fiveth {
+    background-color: #5CB52F;
+}
+
+.sixth {
+    background-color: #7770BF;
+}
+
+.seventh {
+    background-color: #C64C92;
+}
+
+.eighth {
+    background-color: #CB850E;
+}
+
+.ninth {
+    background-color: #920384;
+    box-shadow: inset 0px 0px 15px 10px #00000022;
+}
+
+
+/*== media query ======================== */
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 1199px) {
+    .cardbox__card {
+        height: 380px;
+    }
+    .card {
+        margin-right: 0px;
+        width: 550px;
+    }
+    .card__line {
+        width: 2px;
+        height: 210px;
+    }
+    .card__part {
+        display: block;
+        text-align: left;
+        width: 200px;
+        height: 200px;
+    }
+    .card__part h2,
+    .card__part a,
+    .card__part p,
+    .card__title {
+        font-size: 17px;
+    }
+    /* copyright */
+    .biology__copyright {
+        height: 60px;
+    }
+    .biology__copyright div h1 {
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .copyright__line {
+        margin-top: 3px;
+        height: 3px;
+        width: 100vw;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .cardbox__card {
+        height: 400px;
+    }
+    .card {
+        margin-right: 1px;
+        width: 800px;
+    }
+    .card__line {
+        width: 2px;
+        height: 230px;
+    }
+    .card__part {
+        display: block;
+        text-align: left;
+        width: 200px;
+        height: 200px;
+    }
+    .card__part h2,
+    .card__part a,
+    .card__part p,
+    .card__title {
+        font-size: 21px;
+    }
+    /* copyright */
+    .biology__copyright {
+        height: 70px;
+    }
+    .biology__copyright div h1 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .copyright__line {
+        margin-top: 4px;
+        height: 4px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .cardbox__card {
+        height: 511px;
+    }
+    .card {
+        width: 900px;
+    }
+    .card__part {
+        display: block;
+        text-align: left;
+        width: 300px;
+        height: 300px;
+    }
+    .card__line {
+        width: 3px;
+        height: 300px;
+    }
+    .card__part h2,
+    .card__part a,
+    .card__part p,
+    .card__title {
+        font-size: 30px;
+    }
+    /* copyright */
+    .biology__copyright {
+        height: 100px;
+    }
+    .biology__copyright div h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .copyright__line {
+        height: 6px;
+        width: 100vw;
+    }
+}
+
+
+/* ==== preloader =================================================== */
+
+.loader {
+    background: none repeat scroll 0 0 #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.loader .loader_inner {
+    animation: animate 1.5s linear infinite;
+    clip: rect(0, 80px, 80px, 40px);
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(220deg)
+    }
+}
+
+.loader .loader_inner:after {
+    animation: animate2 1.5s ease-in-out infinite;
+    clip: rect(0, 80px, 80px, 40px);
+    content: '';
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+
+@keyframes animate2 {
+    0% {
+        box-shadow: inset #b3dfd8 0 0 0 17px;
+        transform: rotate(-140deg);
+    }
+    50% {
+        box-shadow: inset #b3dfd8 0 0 0 2px;
+    }
+    100% {
+        box-shadow: inset #b3dfd8 0 0 0 17px;
+        transform: rotate(140deg);
+    }
+}

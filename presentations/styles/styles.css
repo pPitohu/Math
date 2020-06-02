@@ -1,0 +1,29 @@
+/* Styles */
+
+@import 'fonts.css';
+@import 'shower/shower.css';
+@import 'blocks/badge.css';
+@import 'blocks/caption.css';
+@import 'blocks/progress.css';
+@import 'blocks/region.css';
+@import 'slide/slide.css';
+body {
+    overflow-x: hidden;
+}
+
+.back_button {
+	position: absolute;
+	text-decoration: none;
+	color: #fff !important;
+	/*border: 2px solid red;*/
+	padding: 10px;
+	background-color: #4caf50;
+	border-radius: 10px;
+	font-size: 26px;
+	z-index: 1;
+	transition: 0.2s ease;
+}
+.back_button:hover {
+	padding-top: 60px;
+	padding-bottom: 20px;
+}

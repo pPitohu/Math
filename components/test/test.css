@@ -1,0 +1,248 @@
+.theme__ask,
+.theme__answer {
+    font-size: 25px;
+    color: #545A51;
+}
+
+#test li {
+    width: 900px;
+}
+
+.theme_task {
+    color: #545A51;
+    font-size: 17px;
+    width: 750px;
+    text-align: left;
+    padding-top: 19px;
+    padding-left: 35px;
+    text-indent: -25px;
+    z-index: 3;
+}
+
+
+.theme__ask {
+    font-weight: bold;
+    margin-left: 5px;
+    text-align: left;
+    z-index: 3;
+}
+
+.theme__answer {
+    display: flex;
+    margin: 15px 0px 0px 34px;
+    z-index: 3;
+}
+
+.answer__check {
+    padding-left: 34px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+.check__input {
+    position: absolute;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.check__box {
+    position: absolute;
+    display: block;
+    margin-left: -38px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../assets/img/check.png);
+    background-size: cover;
+}
+
+.check__input:checked+.check__box {
+    background-image: url(../../assets/img/checked.png);
+}
+
+.test__button {
+    background-color: #6FCB6F;
+    width: 250px;
+    height: 42px;
+    border-radius: 21px;
+    color: #EAF8E6;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    margin-top: 50px;
+    margin-left: 200px;
+    border: 0;
+    transition: 0.25s ease;
+    outline: none;
+}
+
+.test__button:hover {
+    background-color: #5FAF5F;
+}
+
+.answ{
+    color: #545A51;
+    padding: 1px 9px;
+    z-index: 3;
+
+}
+
+.allgreen{
+    border-radius: 6px;
+    background-color: #5ADF7933;
+}
+.green {
+    border-radius: 6px;
+    background-color: #5ADF7966;
+}
+
+.allred{
+    border-radius: 6px;
+    background-color: rgba(246, 152, 108, 0.267);
+}
+.red {
+    border-radius: 6px;
+    background-color: #EE534F44;
+}
+
+.gray {
+    border-radius: 6px;
+    background-color: rgba(146, 146, 146, 0.267);
+}
+
+.yellow{
+    background-color: #F3F33C44;
+    border-radius: 6px;
+}
+
+.allback{
+    z-index: 0;
+    left: 0;
+    padding: 10px 200px;
+    margin-left: -200px;
+    margin-bottom: -50px;
+    width: 100vw;
+}
+
+/* .back{
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -5px;
+    width: 85%;
+    height: 35px;
+    z-index: 1;
+} */
+
+.test__button:disabled{
+    background-color: rgb(126, 139, 120);
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .theme__ask,
+    .theme__answer {
+        font-size: 17px;
+    }
+    .theme__ask {
+        margin-left: 5px;
+    }
+    #test li {
+        width: 800px;
+    }
+    .theme__answer {
+        margin: 15px 0px 0px 34px;
+    }
+    .answer__check {
+        padding-left: 28px;
+        margin-bottom: 12px;
+    }
+    .check__box {
+        margin-left: -28px;
+        width: 20px;
+        height: 20px;
+    }
+    .test__button {
+        width: 150px;
+        height: 27px;
+        margin-top: 50px;
+        border-radius: 21px;
+        font-size: 12px;
+        padding-top: 2px;
+        margin-left: 130px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .theme__ask,
+    .theme__answer {
+        font-size: 21px;
+    }
+    .theme__ask {
+        margin-left: 5px;
+    }
+    #test li {
+        width: 900px;
+    }
+    .theme__answer {
+        margin: 15px 0px 0px 30px;
+    }
+    .answer__check {
+        padding-left: 30px;
+        margin-bottom: 15px;
+    }
+    .check__box {
+        margin-left: -30px;
+        margin-top: 2px;
+        width: 23px;
+        height: 23px;
+    }
+    .test__button {
+        width: 180px;
+        height: 32px;
+        margin-top: 70px;
+        border-radius: 21px;
+        font-size: 14px;
+        padding-top: 3px;
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .theme__ask,
+    .theme__answer {
+        font-size: 25px;
+    }
+    #test li {
+        width: 1500px;
+    }
+    .theme__ask {
+        margin-left: 5px;
+    }
+    .theme__answer {
+        margin: 15px 0px 0px 34px;
+    }
+    .answer__check {
+        padding-left: 34px;
+        margin-bottom: 20px;
+    }
+    .check__box {
+        margin-left: -38px;
+        width: 30px;
+        height: 30px;
+    }
+    .test__button {
+        width: 250px;
+        height: 42px;
+        margin-top: 90px;
+        border-radius: 21px;
+        font-size: 20px;
+        padding-top: 5px;
+        margin-left: 200px;
+    }
+
+    .allback{
+        height: 320px;
+    }
+}
