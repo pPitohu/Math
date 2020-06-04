@@ -5,6 +5,7 @@
 	border-radius: 4px;
 	border: 2px solid #ccc;
 	border-bottom: none;
+	border-top: none;
 }
 .content__theme {
 	padding: 3px 0 30px 0;
@@ -13,10 +14,12 @@
 	color: #000;
 	font-size: 24px;
 	padding-bottom: 5px;
+	margin-top: 10px;
 }
 .white-bg > h1 {
 	text-decoration: underline;
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 i {
 	font-weight: 600;
@@ -24,6 +27,7 @@ i {
 .quote {
 	width: calc(100% - 750px);
 	border-left: 3px solid #e12b31;
+	border-right: 3px solid #e12b31;
 	border-radius: 6px;
 	margin: auto;
 }
@@ -32,7 +36,19 @@ i {
 	align-items: center;
 	margin-left: 150px;
 }
-.answer {
+div > .answer {
+	color: #000;
+	font-size: 24px;
 	display: flex;
-	align-items: flex-start;
+	justify-content: flex-end;
+	margin-left: 450px;
+	margin-top: 10px;
+	padding: 4px;
+	border: 2px dashed #ccc;
+	border-radius: 4px;
+}
+.chtoeto {
+	border: 3px solid lightblue;
+	border-radius: 5px;
+	padding: 0px 15px;
 }

@@ -90,23 +90,162 @@
                 <p>Простейшими тригонометрическими уравнениями называются уравнения</p>
                 <p class="quote">$$ cos \space x = a, sin \space x = a, tg \space x = a, ctg \space x = a $$</p>
 
-                <p><i>Рассмотрим уравнение (cos x = a):</i></p>
+                <p style="margin: 30px 0 10px 0;"><i class="chtoeto">Рассмотрим уравнение (cos x = a):</i></p>
                 <p class="fix">1) если $$ \space |a|>1$$ , то уравнение решений не имеет, так как $$ \space |\cos x| \leqslant 1;$$</p>
                 <p class="fix">2) если $$ \space |a|\leqslant 1$$, то уравнение $$\space \cos x = a \space$$  имеет решение, которое находится по формуле $$\space \boxed{x = \pm \arccos a + 2\pi n, n \in Z} \qquad (1)$$</p>
-                <p><b>Частные случаи:</b> <br>
+                <p class="quote"><b>Частные случаи:</b> <br>
                 $$ \cos x = -1 : x = \pi + 2 \pi n, n \in Z , $$<br>
                 $$ \cos x = 0 : x  = \tfrac{\pi}{2} + \pi n, n \in Z , $$ <br>
                 $$ \cos x = 1 : x = 2\pi n, n \in Z . $$         
                 </p>
 
                 <p class="fix">Приведем несколько примеров.</p>
+<!-- пример 1 -->
                 <p class="fix"><i>Пример 1.</i>Решить уравнение $$ \space \boxed{\cos x = -\tfrac{1}{2}}.$$</p>
                 <p class="fix"><em>Решение. </em> Найдем решение по формуле (1): 
                 $$ \quad \boxed{x = \pm\arccos \lparen -\tfrac{1}{2} \rparen + 2\pi n, n \in Z} $$</p>
                 <p>Так как 
                 $$ \boxed{\arccos \lparen -\tfrac{1}{2} \rparen = \pi - \arccos \tfrac{1}{2} = \pi - \tfrac{\pi}{3} = \tfrac{2\pi}{3}} \space,$$ то $$ \boxed{x = \pm \tfrac{2\pi}{3} + 2\pi n, n \in Z}. $$</p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \pm \tfrac{2\pi}{3} + 2\pi n, n \in Z $$</p></div>
+<!-- пример 2 -->
+                <p class="fix"><i>Пример 2.</i>Решить уравнение $$ \space \boxed{\cos \lparen2x - \tfrac{\pi}{4}\rparen = \tfrac{\sqrt{2}}{2} }.$$</p>
+                <p class="fix"><em>Решение. </em> Воспользуемся формулой (1): 
+                $$ \quad  2x - \tfrac{\pi}{4} = \pm\arccos\tfrac{\sqrt{2}}{2} + 2\pi n, n \in Z  $$</p>
+                <p>
+                $$  2x - \tfrac{\pi}{4} = \pm\tfrac{\pi}{4} + 2\pi n, n \in Z $$ 
+                </p>
+                <p>Выразим из последнего равенства х:     
+                $$ \space 2x = \pm\tfrac{\pi}{4} + \tfrac{\pi}{4} + 2\pi n, n \in Z, $$
+                $$ \space x = \pm\tfrac{\pi}{8} + \tfrac{\pi}{8} + \pi n, n \in Z. $$
+                </p>
+                <p>Данное решение можно записать в виде:   <br>  
+                $$ \space x_1 = -\tfrac{\pi}{8} + \tfrac{\pi}{8} + \pi n, n \in Z, $$<br>
+                $$ \space x_2 = \tfrac{\pi}{8} + \tfrac{\pi}{8} + \pi n, n \in Z. $$
+                </p>
+                <p>Следовательно:   <br>  
+                $$ \space x_1 = \pi n, n \in Z, $$<br>
+                $$ \space x_2 = \tfrac{\pi}{4} + \pi n, n \in Z. $$
+                </p>       
+                <div class="center column"><p class="answer">Ответ: 
+                $$ \space x_1 = \pi n, n \in Z, x_2 = \tfrac{\pi}{4} + \pi n, n \in Z. $$
+                </p></div>
+<!-- пример 3 -->
+                <p class="fix"><i>Пример 3.</i>Решить уравнение $$ \space \boxed{\cos x = \lparen\tfrac{x}{4} - \tfrac{\pi}{3}\rparen = 1}.$$</p>
+                <p class="fix"><em>Решение. </em> Для решения воспользуемся частным случаем: 
+                $$ \quad \tfrac{x}{4}-\tfrac{\pi}{3}=2\pi n, n\in Z \quad $$ и найдем x:</p>
+                <p>
+                $$ \tfrac{x}{4}=\tfrac{\pi}{3}+2\pi n, n\in Z $$<br>
+                $$ x = \tfrac{4\pi}{3}+8\pi n, n\in Z $$
+                </p>                               
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \tfrac{4\pi}{3}+8\pi n, n\in Z.$$</p></div>
+
+
+                <p style="margin: 50px 0 10px 0;"><i class="chtoeto">Рассмотрим уравнение (sin x = a):</i></p>
+                <p class="fix">1) если $$ \space |a|>1$$ , то уравнение решений не имеет, так как $$ \space |\sin x| \leqslant 1;$$</p>
+                <p class="fix">2) если $$ \space |a|\leqslant 1$$, то уравнение имеет решение, которое находится по формуле $$\space \boxed{x = \lparen -1\rparen^k \arcsin a + \pi k, k \in Z} \qquad (2)$$</p>
+                <p class="quote"><b>Частные случаи:</b> <br>
+                $$ \sin x = -1 : x = -\tfrac{\pi}{2} + 2\pi n, n \in Z , $$<br>
+                $$ \sin x = 0 : x  = \pi n, n \in Z , $$ <br>
+                $$ \sin x = 1 : x = \tfrac{\pi}{2} + 2\pi n, n \in Z . $$         
+                </p>
+
+                <p class="fix">Рассмотрим несколько примеров.</p>
+<!-- пример 4 -->
+                <p class="fix"><i>Пример 4.</i>Решить уравнение $$ \space \boxed{\sin x = \tfrac{\sqrt{3}}{2}}.$$</p>
+                <p class="fix"><em>Решение. </em>Найдем решение по формуле (2): 
+                $$ \quad x = \lparen -1\rparen^k \arcsin \tfrac{\sqrt{3}}{2} + \pi k, k \in Z $$</p>
+                <p>
+                $$ x = \lparen -1\rparen^k \space\tfrac{\pi}{3} + \pi k, k \in Z $$
+                </p>                               
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \lparen -1\rparen^k \space\tfrac{\pi}{3} + \pi k, k \in Z.$$</p></div>
+<!-- пример 5 -->
+                <p class="fix"><i>Пример 5.</i>Решить уравнение $$ \space \boxed{\sin\lparen\tfrac{x}{2}+\tfrac{\pi}{3}\rparen = -\tfrac{1}{2}}.$$</p>
+                <p class="fix"><em>Решение. </em> Воспользуемся формулой (2): 
+                $$ \quad \tfrac{x}{2}+\tfrac{\pi}{3} = \lparen -1\rparen^k \arcsin \lparen -\tfrac{1}{2}\rparen + \pi k, k \in Z$$</p>
+                <p>
+                $$ \tfrac{x}{2}+\tfrac{\pi}{3} = \lparen -1\rparen^k \lparen -\tfrac{\pi}{6}\rparen + \pi k, k \in Z $$<br>
+                $$ \tfrac{x}{2}+\tfrac{\pi}{3} = \lparen -1\rparen^{k+1} \space \tfrac{\pi}{6} + \pi k, k \in Z $$
+                </p>
+                <p>Из последнего равенства найдем х:     <br>
+                $$ \tfrac{x}{2} = \lparen -1\rparen^{k+1} \space \tfrac{\pi}{6}-\tfrac{\pi}{3} + \pi k, k \in Z $$<br>
+                $$ x = \lparen -1\rparen^{k+1} \space \tfrac{\pi}{3}-\tfrac{2\pi}{3} + 2\pi k, k \in Z $$
+                </p>
+                <p>Данное решение можно записать в виде:   <br>  
+                1) $$ \boxed{k = 2n},$$ <br> 
+                $$ x = \lparen -1\rparen^{2n+1} \space \tfrac{\pi}{3}-\tfrac{2\pi}{3} + 4\pi n, n \in Z, $$<br>
+                $$ x = -\tfrac{\pi}{3}-\tfrac{2\pi}{3} + 4\pi n, n \in Z, $$<br>
+                $$ x = -\pi + 4\pi n, n \in Z. $$ <br><br>
+                2) $$ \boxed{k = 2n+1},$$<br>
+                $$ x = \lparen -1\rparen^{2n+2} \space \tfrac{\pi}{3}-\tfrac{2\pi}{3} + 2\pi \lparen 2n+1\rparen, n \in Z, $$<br>
+                $$ x = \tfrac{\pi}{3}-\tfrac{2\pi}{3} + 4\pi n+ 2\pi, n \in Z, $$<br>
+                $$ x = -\tfrac{\pi}{3} + 4\pi n+ 2\pi, n \in Z, $$<br>
+                $$ x = \tfrac{5\pi}{3} + 4\pi n, n \in Z. $$
+                </p>
+                <p>Таким образом, получим два решения:   <br>  
+                $$ x_1 = -\pi + 4\pi n, n \in Z, $$<br>
+                $$ x_2 = \tfrac{5\pi}{3} + 4\pi n, n \in Z. $$
+                </p>       
+                <div class="center column"><p class="answer">Ответ: 
+                $$ \space x_1 = -\pi + 4\pi n, n \in Z, \space x_2 = \tfrac{5\pi}{3} + 4\pi n, n \in Z. $$
+                </p></div>
+<!-- пример 6 -->
+                <p class="fix"><i>Пример 6.</i>Решить уравнение $$ \space \boxed{\sin \lparen 3x - \tfrac{\pi}{4}\rparen = 0}.$$</p>
+                <p class="fix"><em>Решение. </em> Для решения воспользуемся частным случаем: 
+                $$ \quad 3x - \tfrac{\pi}{4} = \pi n, n \in Z $$</p>
+                <p>
+                $$ 3x  = \tfrac{\pi}{4} + \pi n, n \in Z, $$<br>
+                $$ x  = \tfrac{\pi}{12} + \tfrac{\pi n}{3}, n \in Z.$$
+                </p>                               
+                <div class="center column"><p class="answer">Ответ: $$ \space x  = \tfrac{\pi}{12} + \tfrac{\pi n}{3}, n \in Z.$$</p></div>
+
+                <p style="margin: 50px 0 10px 0;"><i class="chtoeto">Рассмотрим уравнение (tg x = a), $$ a \in R $$:</i></p>
+                <p class="fix">Решение данного уравнения будем находить по формуле $$\space \boxed{x = \arctg a + \pi n, n \in Z} \qquad (3)$$</p>
+<!-- пример 7 -->
+                <p class="fix"><i>Пример 7.</i>Решить уравнение $$ \space \boxed{\tg x = \tfrac{1}{\sqrt{3}}}.$$</p>
+                <p class="fix"><em>Решение. </em>Найдем решение по формуле (3): 
+                $$ \quad x = \arctg \tfrac{1}{\sqrt{3}} + \pi n, n \in Z$$</p>
+                <p>
+                $$ x = \tfrac{\pi}{6}+\pi n, n \in Z. $$
+                </p>                               
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \tfrac{\pi}{6}+\pi n, n \in Z.$$</p></div>
+<!-- пример 8 -->
+                <p class="fix"><i>Пример 8.</i>Решить уравнение $$ \space \boxed{\tg \lparen\tfrac{x}{3}-\tfrac{\pi}{3}\rparen = -1}.$$</p>
+                <p class="fix"><em>Решение. </em>Найдем решение по формуле (3): 
+                $$ \quad \tfrac{x}{3}-\tfrac{\pi}{3} = \arctg \lparen -1\rparen + \pi n, n \in Z$$</p>
+                <p>
+                <p>
+                $$ \tfrac{x}{3}-\tfrac{\pi}{3} = -\tfrac{\pi}{4}+\pi n, n \in Z. $$
+                </p>
+                <p>Из последнего равенства выразим x:<br>
+                $$ \tfrac{x}{3} = -\tfrac{\pi}{4}+\tfrac{\pi}{3}+\pi n, n \in Z, $$<br>
+                $$ \tfrac{x}{3} = \tfrac{\pi}{12}+\pi n, n \in Z, $$<br>
+                $$ x = \tfrac{\pi}{4} + 3\pi n, n \in Z. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \tfrac{\pi}{4} + 3\pi n, n \in Z.$$</p></div>
+
+                <p style="margin: 50px 0 10px 0;"><i class="chtoeto">Рассмотрим уравнение (ctg x = a), $$ a \in R $$:</i></p>
+                <p class="fix">Решение данного уравнения будем находить по формуле $$\space \boxed{x = \arcctg a + \pi n, n \in Z} \qquad (4)$$</p>
+<!-- пример 9 -->
+                <p class="fix"><i>Пример 9.</i>Решить уравнение $$ \space \boxed{\ctg x = -1}.$$</p>
+                <p class="fix"><em>Решение. </em>Воспользуемся формулой (4): 
+                $$ \quad x = \arcctg \lparen -1\rparen + \pi n, n \in Z $$</p>
+                <p>Так как
+                $$ \arcctg \lparen -1\rparen = \pi - \arcctg 1 = \pi - \tfrac{\pi}{4} = \tfrac{3\pi}{4}, $$ 
+                то $$ x = \tfrac{3\pi}{4} + \pi n, n \in Z.$$
+                </p>                               
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \tfrac{3\pi}{4} + \pi n, n \in Z.$$</p></div>
+<!-- пример 10 -->
+                <p class="fix"><i>Пример 10.</i>Решить уравнение $$ \space \boxed{\ctg\lparen 4x - \tfrac{\pi}{3}\rparen = 0}.$$</p>
+                <p class="fix"><em>Решение. </em>Найдем решение по формуле  (4): 
+                $$ \quad 4x - \tfrac{\pi}{3} = \arcctg 0 + \pi n, n \in Z ,$$</p>
+                <p>$$ 4x - \tfrac{\pi}{3} = \tfrac{\pi}{2} + \pi n, n \in Z. $$</p>
+                <p>Из последнего равенства найдем x:<br>
+                $$ 4x = \tfrac{\pi}{2} + \tfrac{\pi}{3} + \pi n, n \in Z, $$<br>
+                $$ 4x = \tfrac{5\pi}{6} + \pi n, n \in Z, $$<br>
+                $$ x = \tfrac{5\pi}{24} + \tfrac{\pi n}{4}, n \in Z. $$
+                </p>                                  
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \tfrac{5\pi}{24} + \tfrac{\pi n}{4}, n \in Z.$$</p></div>
                 
-                <p class="answer">Ответ: </p>
             </div>
         </article>
     </section>
