@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Math</title>
+    <link rel="stylesheet" href="../../../../assets/stackstyles/header.css" />
+    <link rel="stylesheet" href="../../../../assets/stackstyles/sections.css" />
+    <link rel="stylesheet" href="topic1.css" />
+    <link rel="stylesheet" href="../../../../assets/stackstyles/katex.min.css" />
+
+    <script defer src="../../../../js/katex.min.js"></script>
+    <script defer src="../../../../js/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                // ...options...
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="loader_inner"></div>
+    </div>
+    <header class="center column">
+        <div class="biology__title">
+            <p class="center">ЭЛЕКТРОННОЕ СРЕДСТВО ОБУЧЕНИЯ</p>
+            <p class="center">ПО ДИСЦИПЛИНЕ "МАТЕМАТИКА"</p>
+            <p>тригонометрические уравнения</p>
+        </div>
+
+        <div class="biology__poster">
+            <a href="../../../../Index.html">
+                <img src="../../../../assets/img/Biology_header.png" alt="Biology" />
+            </a>
+        </div>
+
+        <nav class="biology__nav center column">
+            <p class="nav__section">РАЗДЕЛЫ</p>
+
+            <div class="nav__line"></div>
+
+            <img src="../../../../assets/img/navbar.png" alt="navbar" />
+
+            <ul class="center row">
+                <li class="nav__butt">
+                    <a href="../../../theory/theory.html">
+                        <p>Теоретический</p>
+                    </a>
+                </li>
+                <li class="nav__butt">
+                    <a href="../../../practice/practice.html">
+                        <p>Практический</p>
+                    </a>
+                </li>
+                <li class="nav__butt">
+                    <a href="../../../handbook/handbook.html">
+                        <p>Справочник</p>
+                    </a>
+                </li>
+                <li class="nav__butt">
+                    <a href="../../../test/test.html">
+                        <p>Контроля знаний</p>
+                    </a>
+                </li>
+                <li class="nav__butt">
+                    <a href="../../../other/other.html">
+                        <p>Презентация</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section class="biology__content center column">
+        <div>
+            <div class="content__line"></div>
+            <h1>Простейшие тригонометрические уравнения</h1>
+            <div class="content__line"></div>
+        </div>
+        <article class="content__theme">
+            <div class="white-bg">
+                <h1>Решение простейших тригонометрических уравнений</h1>
+                <p>Простейшими тригонометрическими уравнениями называются уравнения</p>
+                <p class="quote">$$ cos \space x = a, sin \space x = a, tg \space x = a, ctg \space x = a $$</p>
+
+                <p><i>Рассмотрим уравнение (cos x = a):</i></p>
+                <p class="fix">1) если $$ \space |a|>1$$ , то уравнение решений не имеет, так как $$ \space |\cos x| \leqslant 1;$$</p>
+                <p class="fix">2) если $$ \space |a|\leqslant 1$$, то уравнение $$\space \cos x = a \space$$  имеет решение, которое находится по формуле $$\space \boxed{x = \pm \arccos a + 2\pi n, n \in Z} \qquad (1)$$</p>
+                <p><b>Частные случаи:</b> <br>
+                $$ \cos x = -1 : x = \pi + 2 \pi n, n \in Z , $$<br>
+                $$ \cos x = 0 : x  = \tfrac{\pi}{2} + \pi n, n \in Z , $$ <br>
+                $$ \cos x = 1 : x = 2\pi n, n \in Z . $$         
+                </p>
+
+                <p class="fix">Приведем несколько примеров.</p>
+                <p class="fix"><i>Пример 1.</i>Решить уравнение $$ \space \boxed{\cos x = -\tfrac{1}{2}}.$$</p>
+                <p class="fix"><em>Решение. </em> Найдем решение по формуле (1): 
+                $$ \quad \boxed{x = \pm\arccos \lparen -\tfrac{1}{2} \rparen + 2\pi n, n \in Z} $$</p>
+                <p>Так как 
+                $$ \boxed{\arccos \lparen -\tfrac{1}{2} \rparen = \pi - \arccos \tfrac{1}{2} = \pi - \tfrac{\pi}{3} = \tfrac{2\pi}{3}} \space,$$ то $$ \boxed{x = \pm \tfrac{2\pi}{3} + 2\pi n, n \in Z}. $$</p>
+                
+                <p class="answer">Ответ: </p>
+            </div>
+        </article>
+    </section>
+
+
+    <footer>
+        <div class="footer__line"></div>
+        <div class="footer__authors center column">
+            <p>Электронное средство обучения по дисциплине "Математика" 2020</p>
+        </div>
+    </footer>
+</body>
+
+</html>
