@@ -5,10 +5,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <title>Biology</title>
+    <title>Math</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../assets/img/CAL-flat.ico">
     <link rel="stylesheet" href="../../../../assets/stackstyles/header.css" />
     <link rel="stylesheet" href="../../../../assets/stackstyles/sections.css" />
-    <link rel="stylesheet" href="other.css" />
+    <link rel="stylesheet" href="topic2.css" />
     <link rel="stylesheet" href="../../../../assets/stackstyles/katex.min.css" />
 
     <script defer src="../../../../js/katex.min.js"></script>
@@ -84,6 +86,251 @@
             <h1>Типы тригонометрических уравнений</h1>
             <div class="content__line"></div>
         </div>
+        <article class="content__theme">
+            <div class="white-bg">
+                <h1>Типы тригонометрических уравнений и способы их решения</h1>
+                <p>Уравнения, сводящиеся к квадратным относительно одной тригонометрической функции одного аргумента<br>Такими уравнениями являются уравнения вида:</p>
+                <p class="quote">
+                    $$ a\sin^2 \alpha x + b\sin \alpha x + c = 0;\qquad (1) $$
+                    $$ a\cos^2 \alpha x + b\cos \alpha x + c = 0;\quad \,\,\,\,(2) $$
+                    $$ a\tg^2 \alpha x + b\tg \alpha x + c = 0;\qquad \,\,\,\,\,(3) $$
+                    $$ a\ctg^2 \alpha x + b\ctg \alpha x + c = 0.\qquad \,(4) $$<br>
+                    $$ a\,\cancel{=} \,0; \alpha \,\cancel{=} \,0  $$
+                </p>
+                <br>
+                <p>Уравнения вида: <br>
+                    $$ a\sin^2 \alpha x + b\cos \alpha x + c = 0 $$<br>
+                    $$ a\cos^2 \alpha x + b\sin \alpha x + c = 0 $$<br>
+                   сводятся к уравнениям (1) и (2) путем замены $$ \sin^2 \alpha x $$ на $$ 1-\cos^2\alpha x $$ и $$ \cos^2\alpha x $$ на $$ 1-\sin^2\alpha x. $$
+                </p>
+                <p>Уравнение вида: <br>
+                    $$ a\tg\alpha x + b\ctg\alpha x = c $$<br>
+                   сводится к уравнениям (3) и (4) путем замены $$ \ctg \alpha x $$ на $$ \tfrac{1}{\tg\alpha x} $$ или $$ \tg\alpha x $$ на $$ \tfrac{1}{\ctg\alpha x}. $$
+                </p>
+                
+                <p class="fix">Рассмотрим несколько примеров.</p>
+<!-- primer 1 -->
+                <p class="fix"><i>Пример 1.</i>Решить уравнение $$ \space \boxed{\cos^2 x + \cos x - 2 = 0 }.$$</p>
+                <p class="fix"><em>Решение. </em> Данное уравнение является квадратным относительно $$ \space \cos x. $$</p>
+                <p class="fix">Обозначив $$ \space \cos x = y, \space $$ получим уравнение $$ \space y^2 + y - 2 = 0. \space $$ Его корни $$ \space y_1 = 1, \space $$ и $$ \space y_2 = -2. $$</p>
+                <p class="fix">Таким образом, решение исходного уравнения свелось к решению простейших уравнений:</p>
+                <p>
+                    $$ 1) \cos x = 1, x = 2\pi n, n \in Z; $$<br>
+                    $$ 2) \cos x = -2 \space $$ - уравнение не имеет корней, так как $$ \space |-2|>1. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x = 2\pi n, n \in Z. $$</p></div>
+<!-- primer 2 -->
+                <p class="fix"><i>Пример 2.</i>Решить уравнение $$ \space \boxed{2\cos^2 x - 5\sin x + 1 = 0 }.$$</p>
+                <p class="fix"><em>Решение. </em> Заменив $$ \space \cos^2 x \space $$ на $$ \space 1-\sin^2 x \space , \space $$ получим $$ \space 2(1-\sin^2 x)-5\sin x + 1 = 0,\space $$ или $$ \space 2\sin^2 x + 5\sin x - 3 = 0.$$</p>
+                <p class="fix">Обозначив $$ \space \sin x = y, \space $$ получим $$ \space 2y^2 + 5y - 3 = 0, \space $$ откуда $$ \space y_1 = -3, \space $$ и $$ \space y_2 = \tfrac{1}{2}. $$</p>
+                <p class="fix">После этого перейдем к решению простейших уравнений:</p>
+                <p>
+                    $$ 1) \sin x = -3 \space $$ - уравнение не имеет корней, так как $$ \space |-3|>1 ;$$<br>
+                    $$ 2) \sin x = \tfrac{1}{2}; x = (-1)^k \tfrac{\pi}{6}+\pi k, k\in Z. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x = (-1)^k \tfrac{\pi}{6}+\pi k, k\in Z. $$</p></div>
+<!-- primer 3 -->
+                <p class="fix"><i>Пример 3.</i>Решить уравнение $$ \space \boxed{ \tg x - 2\ctg x + 1 = 0 }.$$</p>
+                <p class="fix"><em>Решение.</em> Заменив 
+                $$ \space \ctg x \space $$ на
+                $$ \space \tfrac{1}{\tg x} \space , \space $$ получим уравнение  
+                $$ \space \tg x - \tfrac{2}{\tg x} + 1 = 0. $$
+                </p>
+                <p class="fix">Умножив обе части уравнения на 
+                $$ \space \tg x \cancel{=} 0, \space $$ получим
+                $$ \space \tg^2 x + \tg x - 2 = 0 \space $$ - квадратное уравнение относительно $$ \space \tg x. $$
+                </p>
+                <p class="fix">Сделав замену 
+                $$ \space\tg x = y , \space $$ получим уравнение 
+                $$ \space y^2 + y - 2 = 0, \space $$ откуда
+                $$ \space y_1 = 1; \space $$ и $$ \space y_2 = -2.$$
+                </p>
+                <p class="fix">После этого перейдем к решению простейших уравнений:</p>
+                <p>
+                    $$ 1) \tg x = 1; x = \tfrac{\pi}{4} + \pi n, n\in Z, $$<br>
+                    $$ 2) \tg x = -2; x = \arctg(-2)+\pi n, n\in Z; x = -\arctg 2 +\pi n, n\in Z. $$
+                </p>
+                <p class="fix">Отметим, что левая часть исходного уравнения имеет смысл, если $$ \space\tg x \cancel{=} 0, \space $$
+                так для найденных корней $$ \space\tg x \cancel{=} 0, \space $$</p><p class="fix"> то исходное уравнение равносильно уравнению $$ \space \tg^2 x + \tg x - 2 = 0.$$</p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \tfrac{\pi}{4} + \pi n, n\in Z; x = -\arctg 2 +\pi n, n\in Z. $$</p></div>
+<!-- primer 4 -->
+                <p class="fix"><i>Пример 4.</i>Решить уравнение $$ \space \boxed{ 3\cos^2 6x + 8\sin 3x\cos 3x - 4 = 0 }.$$</p>
+                <p class="fix"><em>Решение.</em>Используя формулы 
+                $$ \space\cos^2 6x + \sin^2 6x = 1\space $$ и
+                $$ \space \sin 6x = 2\sin 3x\cos 3x,\space $$ преобразуем уравнение:
+                </p> 
+                <p class="fix">
+                $$ 3(1-\sin^2 6x)+4\sin 6x-4=0 ,\quad 3\sin^2 6x-4\sin 6x+1=0. $$ 
+                </p>
+                <p class="fix">Мы получили квадратное уравнение относительно $$\space\sin 6x$$. Обозначив $$ \space\sin 6x=y,\space $$ получим уравнение $$\space 3y^2 -4y+1=0 $$,</p><p class="fix">откуда $$\space y_1 =1; y_2 =\tfrac{1}{3}. $$</p>
+                <p class="fix">Решая простейшие уравнения, получим:</p>
+                <p>
+                    $$ 1)\sin 6x=1; 6x=\tfrac{\pi}{2}+2\pi n, n\in Z; x = \tfrac{\pi}{12}+\tfrac{\pi n}{3}, n\in Z; $$<br>
+                    $$ 2)\sin 6x=\tfrac{1}{3}; 6x=(-1)^k \arcsin \tfrac{1}{3}+\pi k, k\in Z; x = \tfrac{(-1)^k}{6} \arcsin\tfrac{1}{3}+\tfrac{\pi k}{6},k\in Z. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x = \tfrac{\pi}{12}+\tfrac{\pi n}{3}, n\in Z; x = \tfrac{(-1)^k}{6} \arcsin\tfrac{1}{3}+\tfrac{\pi k}{6},k\in Z. $$</p></div>
+
+                <p style="margin: 50px 0 10px 0;"><i class="chtoeto">Однородные тригонометрические уравнения.</i></p>
+                <p>Однородными тригонометрическими уравнениями первой степени называются уравнения вида<br>
+                <p class="quote">$$ \space a\sin x + b\cos x = 0, a\,\cancel{=}\,0, b\,\cancel{=}\,0. $$</p></p>
+
+                <p>Однородными тригонометрическими уравнениями второй степени называются уравнения вида<br>
+                <p class="quote">$$ \space a\sin^2 x + b\sin x \cos x + c\cos^2 x = 0, b\,\cancel{=}\,0, a^2 + c^2\,\cancel{=}\,0. $$</p></p>
+
+                <p class="fix">При решении однородного уравнения первой степени необходимо разделить обе части уравнения на cos x и решать линейное уравнение относительно tg x.</p>
+                <p class="fix">Однако при делении уравнения на выражение, содержащее неизвестное, могут быть потеряны корни. Поэтому нужно проверить, не являются ли корни уравнения cos x = 0 корнями данных уравнений.Если cos x = 0, то из первого и второго уравнений следует, что sin x = 0.</p>
+                <p class="fix">Однако   и   не могут одновременно равняться нулю, так как они связаны равенством</p><p class="fix"> $$\space \sin^2 x + \cos^2 x = 1,\space $$ следовательно, при делении уравнений на cos x или $$\space\cos^2 x \space $$ корни не теряются.</p><br>
+
+                <p class="fix">Рассмотрим несколько примеров.</p>
+<!-- primer 1 -->
+                <p class="fix"><i>Пример 1.</i>Решить уравнение $$ \space \boxed{2\sin x + 3\cos x = 0 }.$$</p>
+                <p class="fix"><em>Решение. </em> Разделив уравнение на  $$ \space \cos x \,\cancel{=}\,0,\space $$ получим $$ \space 2\tg x-3=0,\space $$ откуда $$ \space\tg x=\tfrac{3}{2}\space $$ и $$ \space x=\arctg\tfrac{3}{2}+\pi n, n\in Z. $$</p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x=\arctg\tfrac{3}{2}+\pi n, n\in Z. $$</p></div>
+<!-- primer 2 -->
+                <p class="fix"><i>Пример 2.</i>Решить уравнение $$ \space \boxed{ \cos 2x + \cos^2 x + \sin x \cos x = 0 }.$$</p>
+                <p class="fix"><em>Решение. </em> Используя формулу $$ \space \cos 2x=\cos^2 x-\sin^2 x,\space $$ приведем данное уравнение к однородному:</p><p class="fix">$$ \space \cos^2 x-\sin^2 x+\cos^2 x +\sin x\cos x=0, \quad 2\cos^2 x-\sin^2 x+\sin x\cos x=0.$$</p>
+                <p class="fix">Разделим почленно на $$ \space\cos^2 x \,\cancel{=}\,0 $$:</p>
+                <p class="fix">$$ 2-\tg^2 x+\tg x=0,\space $$ откуда $$ \space\tg^2 x - \tg x-2=0. $$</p>
+                <p class="fix">Введем замену $$ \space\tg x=y\space $$ и получим уравнение $$ \space y^2 - y - 2 = 0, \space $$ корнями которого будут $$ \space y_1 = -1, y_2 = 2. $$</p>
+                <p class="fix">После чего перейдем к решению простейших уравнений:</p>
+                <p>
+                    $$ 1) \tg x= -1, x = -\tfrac{\pi}{4}+\pi n, n\in Z;$$<br>
+                    $$ 2) \tg x=2, x=\arctg 2+\pi n, n\in Z. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x = -\tfrac{\pi}{4}+\pi n, n\in Z,\space x=\arctg 2+\pi n, n\in Z. $$</p></div>
+<!-- primer 3 -->
+                <p class="fix"><i>Пример 3.</i>Решить уравнение $$ \space \boxed{ 4\sin^2 x-\sin 2x = 3 }.$$</p>
+                <p class="fix" style="max-width: 1400px;"><em>Решение. </em> Используя формулы $$ \space \sin 2x = 2\sin x\cos x\space $$ и $$ \space\sin^2 x+\cos^2 x = 1,\space $$ преобразуем данное уравнение к однородному:</p>
+                <p>
+                    $$ 4\sin^2 x-2\sin x\cos x=3(\cos^2 x+\sin^2 x), $$<br>
+                    $$ 4\sin^2 x-2\sin x\cos x-3\cos^2 x-3\sin^2 x=0, $$<br>
+                    $$ \sin^2 x-2\sin x\cos x-3\cos^2 x=0 $$
+                </p>
+                <p class="fix">Разделим на $$ \space\cos^2 x\,\cancel{=}\,0 $$: $$ \quad \tg^2 x-2\tg x-3=0. $$</p>
+                <p class="fix">Введем замену $$ \space\tg x=y\space $$ и получим уравнение $$ \space y^2 - 2y - 3 = 0, \space $$ откуда $$ \space y_1 = -1, y_2 = 3. $$</p>
+                <p class="fix">Решим уравнения:</p>
+                <p>
+                    $$ 1) \tg x= -1; x= -\tfrac{\pi}{4}+\pi n, n\in Z; $$<br>
+                    $$ 2) \tg x = 3; x=\arctg 3 + \pi n, n\in Z. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x= -\tfrac{\pi}{4}+\pi n, n\in Z, x=\arctg 3 + \pi n, n\in Z.$$</p></div>
+
+
+                <p style="margin: 50px 0 10px 0;"><i class="chtoeto">Уравнения, решаемые разложением левой части на множители</i></p>
+
+<!-- primer 1 -->
+                <p class="fix"><i>Пример 1.</i>Решить уравнение $$ \space \boxed{ \sin x\tg x+1-\sin x-\tg x=0 }.$$</p>
+                <p class="fix"><em>Решение. </em> Преобразуем уравнение следующим образом:  <br>
+                $$ \space \sin x\tg x-\tg x-\sin x+1=0,\space $$ </p><p class="fix">откуда $$ \space \tg x(\sin x-1)-(\sin x-1)=0 \space $$ или $$ \space (\sin x-1)(\tg x-1)=0. $$</p>
+                <p class="fix">Решением будут соответственно $$\space\sin x=1 \space $$ и $$\space \tg x=1. $$</p>
+                <p class="fix">
+                    $$ x=\tfrac{\pi}{2}+2\pi n, n\in Z; x=\tfrac{\pi}{4}+\pi n, n\in Z. $$
+                </p>
+                <p class="fix" style="max-width: 1400px;">Однако решение $$\space \tfrac{\pi}{2}+2\pi n, n\in Z\space $$ не удовлетворяет исходному уравнению, так как $$ \space\tg x\space $$ при этих значениях не существует.</p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x=\tfrac{\pi}{4}+\pi n, n\in Z. $$</p></div>
+<!-- primer 2 -->
+                <p class="fix"><i>Пример 2.</i>Решить уравнение $$ \space \boxed{ \sin 2x-\sin x=0 }.$$</p>
+                <p class="fix"><em>Решение. </em> Используя формулу $$ \space \sin 2x=2\sin x\cos x,\space $$ запишем уравнение в виде:</p><p class="fix">$$ \space 2\sin x\cos x-\sin x=0,\space $$ откуда $$\space \sin x(2\cos x-1)=0.$$</p>
+                <p class="fix">Получим:</p>
+                <p>
+                    $$ 1) \sin x = 0, x=\pi n, n\in Z; $$<br>
+                    $$ 2)\space 2\cos x-1=0; \cos x=\tfrac{1}{2}; x=\pm\tfrac{\pi}{3}+2\pi n, n\in Z. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x=\pi n, n\in Z; x=\pm\tfrac{\pi}{3}+2\pi n, n\in Z. $$</p></div>    
+<!-- primer 3 -->
+                <p class="fix"><i>Пример 3.</i>Решить уравнение $$ \space \boxed{ \cos 3x+\sin 5x=0 }.$$</p>
+                <p class="fix"><em>Решение. </em> Используя формулу приведения $$ \space \sin \alpha =\cos(\tfrac{\pi}{2}-\alpha),\space $$ запишем уравнение в виде:</p><p class="fix">$$ \space \cos 3x+\cos(\tfrac{\pi}{2}-5x)=0.$$</p>
+                <p class="fix">Используя формулу для суммы косинусов, получим:</p>
+                <p class="fix">$$ 2\cos(\tfrac{\pi}{4}-x)\cos(4x-\tfrac{\pi}{4})=0,\space $$ откуда</p>
+                <p>
+                    $$ 1) \cos(\tfrac{\pi}{4}-x)=0; \cos(x-\tfrac{\pi}{4})=0; x-\tfrac{\pi}{4}=\tfrac{\pi}{2}+\pi n, n\in Z; x=\tfrac{3\pi}{4}+\pi n, n\in Z; $$<br>
+                    $$ 2) \cos(4x-\tfrac{\pi}{4})=0; 4x-\tfrac{\pi}{4}=\tfrac{\pi}{2}+\pi n, n\in Z; x=\tfrac{3\pi}{16}+\tfrac{\pi n}{4}, n\in Z. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x=\tfrac{3\pi}{4}+\pi n, n\in Z; x=\tfrac{3\pi}{16}+\tfrac{\pi n}{4}, n\in Z.$$</p></div>   
+
+                <p style="margin: 50px 0 10px 0;"><i class="chtoeto">Решение уравнений вида $$\space a\sin x+b\cos x=c\space$$ (введение вспомогательного угла)</i></p>    
+                <p class="fix">Разделив обе части уравнения $$\space \boxed{a\sin x+b\cos x=c}\space$$ на $$\space\boxed{\sqrt{a^2 + b^2}},\space $$ получим:</p>
+                <p class="fix">
+                $$ \frac{a}{\sqrt{a^2 + b^2}}\sin x+\frac{b}{\sqrt{a^2 + b^2}}\cos x=\frac{c}{\sqrt{a^2 + b^2}}. $$
+                </p>
+                <p class="fix">Так как $$\space (\tfrac{a}{\sqrt{a^2 + b^2}})^2 +(\tfrac{b}{\sqrt{a^2 + b^2}})^2 = 1,\space $$ то существует угол $$\space\phi\space$$ такой, что $$ \space\cos\phi = \tfrac{a}{\sqrt{a^2 + b^2}}, \sin\phi = \tfrac{b}{\sqrt{a^2 + b^2}},\space $$ при этом </p>
+                <p class="fix">
+                $$\phi = \arccos\tfrac{a}{\sqrt{a^2 + b^2}}$$(или $$\space\phi = \arcsin\tfrac{b}{\sqrt{a^2 + b^2}}$$ ).
+                </p> 
+                <p class="fix">Тогда исходное уравнение примет вид:</p>
+                <p>
+                    $$ \sin x\cos\phi +\cos x\sin\phi = \frac{c}{\sqrt{a^2 + b^2}}\quad $$ или $$ \quad\sin(x+\phi)=\frac{c}{\sqrt{a^2 + b^2}},\space c \leqslant\sqrt{a^2 + b^2}, $$
+                </p>   
+                <p>
+                    $$ x+\phi = (-1)^k \arcsin\frac{c}{\sqrt{a^2 + b^2}}+\pi k, k\in Z,\space $$ откуда $$ \space \boxed{x= -\arccos\frac{a}{\sqrt{a^2 + b^2}}+(-1)^k \arcsin\frac{c}{\sqrt{a^2 + b^2}}+\pi k, k\in Z}. $$
+                </p> 
+
+<!-- PRIMER -->
+                <p class="fix"><i>Пример.</i>Решить уравнение $$ \space \boxed{ \sin x+\cos x=1 }.$$</p>
+                <p class="fix"><em>Решение. </em> Разделив левую и правую часть уравнения на $$ \space \sqrt{2}\space $$(так как a = 1; b = 1), получим </p><p class="fix">$$ \space \tfrac{1}{\sqrt{2}}\sin x+\tfrac{1}{\sqrt{2}}+\cos x=\tfrac{1}{\sqrt{2}}.\space $$ Тогда $$\space \cos\phi = \tfrac{1}{\sqrt{2}}\space $$ и $$ \space\sin\phi = \tfrac{1}{\sqrt{2}},\space $$ откуда $$ \space\phi = \arccos\tfrac{1}{\sqrt{2}}=\tfrac{\pi}{4}.$$</p>
+                <p class="fix">Таким образом, получим уравнение:</p>
+                <p>
+                    $$ \cos\tfrac{\pi}{4}\sin x+\sin\tfrac{\pi}{4}\cos x=\tfrac{1}{\sqrt{2}}, $$<br>
+                    $$ \sin(x+\tfrac{\pi}{4})=\tfrac{1}{\sqrt{2}}, $$<br>
+                    $$ x+\tfrac{\pi}{4}=(-1)^k \tfrac{\pi}{4}+\pi k, k\in Z, $$<br>
+                    $$ x=(-1)^k \tfrac{\pi}{4}-\tfrac{\pi}{4}+\pi k, k\in Z. $$
+                </p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x=(-1)^k \tfrac{\pi}{4}-\tfrac{\pi}{4}+\pi k, k\in Z. $$</p></div> 
+
+                <p style="margin: 50px 0 10px 0;"><i class="chtoeto">Решение уравнений с применением формул понижения степени</i></p>
+                <p>При решении широкого круга тригонометрических уравнений ключевую роль играют формулы понижения степени:</p>
+                <p class="quote">
+                    $$\sin^2\alpha = \frac{1-\cos 2\alpha}{2}  \quad $$ или $$\quad \cos^2\alpha = \frac{1+\cos 2\alpha}{2}  $$
+                </p>   
+<!--Primer-->
+                <p class="fix"><i>Пример.</i>Решить уравнение $$ \space \boxed{ \sin^2 x+\sin^2 2x=\sin^2 3x+\sin^2 4x }.$$</p> 
+                <p class="fix"><em>Решение. </em> Применив формулу $$\space\sin^2\alpha = \frac{1-\cos 2\alpha}{2}$$, получим: $$ \space \frac{1-\cos 2x}{2}+\frac{1-\cos 4x}{2}-\frac{1-\cos 6x}{2}-\frac{1-\cos 8x}{2}=0\space $$ </p> 
+                <p class="fix">Преобразуя, перейдем к решению уравнения</p>
+                <p class="fix">$$ \cos 8x+\cos 6x-\cos 2x-\cos 4x=0 $$, откуда
+                $$\quad (\cos 8x-\cos 2x)+(\cos 6x-\cos 4x)=0. $$
+                </p>
+                <p class="fix">Применив формулы преобразования суммы и разности косинусов в произведение, получим:</p> 
+                <p class="fix">$$ -2\sin 3x\sin 5x-2\sin x\sin 5x=0 \space $$ или $$\space 2\sin 5x(\sin 3x+\sin x)=0,\space $$ откуда</p>
+                <p class="fix">$$ \sin 5x=0; 5x=\pi n, n\in Z; x=\tfrac{\pi n}{5}, n\in Z \space $$ или $$\space \sin 3x+\sin x=0,\space $$ откуда по формуле</p>
+                <p class="fix">$$ \sin\alpha +\sin\beta = 2\sin\tfrac{\alpha + \beta}{2}\cos\tfrac{\alpha - \beta}{2} \space $$ получим: $$ \space 2\sin 2x\cos x=0 \space $$ или $$ \space \sin 2x=0; \space\cos x=0. $$</p>
+                <p>
+                    $$ 1) \sin 2x=0;\space 2x=\pi k,k\in Z; x=\tfrac{\pi k}{2},k\in Z; $$<br>
+                    $$ 2) \cos x=0;\space x=\tfrac{\pi}{2}+\pi m, m\in Z. $$
+                </p>
+                <p class="fix">Решение из множества $$ \space x=\tfrac{\pi k}{2},k\in Z \space $$ содержится во множестве решений $$ \space x=\tfrac{\pi}{2}+\pi m, m\in Z \space $$ при $$ \space k=2m+1,\space $$</p><p class="fix">поэтому получим два множества решений:$$\space x=\tfrac{\pi n}{5}, n\in Z \space $$ и $$\space x=\tfrac{\pi}{2}+\pi m, m\in Z. $$</p>
+                <div class="center column"><p class="answer">Ответ: $$ \space x=\tfrac{\pi n}{5}, n\in Z; \space x=\tfrac{\pi}{2}+\pi m, m\in Z. $$</p></div> 
+
+                <p><i>Решение уравнений</i></p>
+                <p>
+                    $$ \sin^2 x=a^2, \cos^2 x=a^2, $$<br>
+                    $$ \tg^2 x=a^2, \ctg^2 x=a^2. $$
+                </p>
+                <p>Данные уравнения решаются следующим образом:</p>
+                <p class="quote">
+                    $$ 1) \sin^2 x=a^2, |a|\leqslant 1; \space x=\pm\arcsin a+\pi n, n\in Z; $$<br>
+                    $$ 2) \cos^2 x=a^2, |a|\leqslant 1; \space x=\pm\arccos a+\pi n, n\in Z; $$<br>
+                    $$ 3) \tg^2 x=a^2; \space x=\pm\arctg a+\pi n, n\in Z; $$<br>
+                    $$ 4) \ctg^2 x=a^2; \space x=\pm\arcctg a+\pi n, n\in Z. $$
+                </p>
+
+                <p style="margin: 50px 0 10px 0;"><i class="chtoeto">Решение уравнений методом универсальной подстановки</i></p>
+                <p>Метод универсальной подстановки для решения тригонометрического уравнения заключается в выражении<br> тригонометрических функций через $$\space\tg\tfrac{\alpha}{2}\space $$ с помощью формул:</p>
+                <p>
+                    $$ \sin\alpha = \frac{2\tg^2 \tfrac{\alpha}{2}}{1+\tg^2 \tfrac{\alpha}{2}} \qquad \cos\alpha = \frac{1-\tg^2 \tfrac{\alpha}{2}}{1+\tg^2 \tfrac{\alpha}{2}} \qquad \tg\alpha = \frac{2\tg^2 \tfrac{\alpha}{2}}{1-\tg^2 \tfrac{\alpha}{2}} $$
+                </p>
+                <p>Следует отметить, что применение данных формул  может привести к сужению ОДЗ исходного уравнения,<br> поскольку $$\space\tg\tfrac{\alpha}{2}\space $$ не определен в точках $$ \space\pi +2\pi n, n\in Z. \space $$ В таких случаях нужно проверять,<br> являются ли точки $$ \space\pi +2\pi n, n\in Z \space $$ корнями исходного уравнения.</p>
+<!--Primer-->
+                <p class="fix"><i>Пример.</i>Решить уравнение $$ \space \boxed{ \sin x+\tg\tfrac{x}{2}=0 }.$$</p> 
+                <p class="fix"><em>Решение. </em>По условию задачи $$\space x\,\cancel{=}\,\pi +2\pi n,n\in Z $$, так как в этих точках не определен $$ \space \tg\tfrac{x}{2}. $$ </p> 
+                <p class="fix">Применив формулы выше и сделав замену $$\space\tg\tfrac{x}{2}=t, \space $$ получим $$ \space\frac{2t}{1+t^2}+t=0,\space $$ откуда</p>
+                <p class="fix">$$ \frac{2t+t+t^3}{1+t^2}=0 \space $$, или $$\space 3t+t^3=0;\space t(3+t^2)=0,\space $$ откуда $$\space t=0 \space$$ или $$\space 3+t^2=0. $$</p>
+                <p>Второе уравнение решений не имеет, следовательно</p> 
+                <p>$$ \tg\frac{x}{2}=0;\quad \frac{x}{2}=\pi n, n\in Z;\quad x=2\pi n, n\in Z. $$</p>
+                <p>Точки $$\space x=\pi +2\pi n,n\in Z \space $$ не входят в решения $$\space x=2\pi n, n\in Z.$$</p>
+
+                <div class="center column"><p class="answer">Ответ: $$ \space x=2\pi n, n\in Z.$$</p></div>               
+            </div>
+        </article>
     </section>
 
 
