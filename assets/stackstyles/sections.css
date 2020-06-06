@@ -81,8 +81,13 @@ table.unstyledTable tfoot {
     padding: 20px 0px 100px 0px;
 }
 
+.content__theme ul{
+    margin-top: 70px;
+}
+
 .content__theme li {
     margin: 80px 0px 0px 180px;
+    margin: 0px 0px 0px 180px;
 }
 
 .theme__title,
@@ -284,6 +289,8 @@ table.unstyledTable tfoot {
     }
     .content__theme>ul>li {
         margin: 70px 0px 0px 120px;
+        margin: 0px 0px 0px 120px;
+        padding-top: 19px;
     }
     .theme__title,
     .theme__other>a {
@@ -304,6 +311,8 @@ table.unstyledTable tfoot {
     }
     .content__theme>ul>li {
         margin: 70px 0px 0px 140px;
+        margin: 0px 0px 0px 140px;
+        padding-top: 19px;
     }
     .theme__title,
     .theme__other>a {
@@ -357,6 +366,8 @@ table.unstyledTable tfoot {
     }
     .content__theme>ul>li {
         margin: 80px 0px 0px 180px;
+        margin: 0px 0px 0px 180px;
+        padding-top: 19px;
     }
     .theme__title,
     .theme__other>a {
