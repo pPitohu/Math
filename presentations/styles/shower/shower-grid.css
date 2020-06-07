@@ -2,12 +2,19 @@
 
 .shower.full.grid::before {
     position: absolute;
-    top: 0;
+    top: 35px;
     right: 0;
     bottom: 0;
-    left: 0;
+    left: -225px;
+    width: 156px;
+    line-height: 27px;
+    background-color: #262626;
+    height: 52px;
+    padding: 4px;
+    border-radius: 5px;
     z-index: 1;
-    content: '';
+    content: 'Чтобы выйти, нажмите ESC.';
+    color: #ccc;
     pointer-events: none;
     background-image: url('');
 }
