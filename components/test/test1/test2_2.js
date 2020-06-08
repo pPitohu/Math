@@ -8,43 +8,55 @@ div.setAttribute('class', 'theme__answer left column')
 
 // Обьявление массива quest с тестом
 let quest = [{
-        text: "1. Решите уравнение $$\\sin 2x=0,5 $$.",
+        text: "1. Решите уравнение $$3\\sin x=0 $$.",
         answers: [
-            "1) $$\\pm\\frac{\\pi}{3}+4\\pi k, k\\in Z $$",
-            "2) $$(-1)^{k}\\frac{\\pi}{12}+\\frac{1}{2}\\pi k, k\\in Z $$",
-            "3) $$\\pm\\frac{\\pi}{12}+\\pi k, k\\in Z $$",
-            "4) $$(-1)^{k}\\frac{\\pi}{3}+2\\pi k, k\\in Z $$"
+            "1) $$\\pi k, k\\in Z $$",
+            "2) $$2\\pi k, k\\in Z $$",
+            "3) $$\\frac{\\pi}{2}+ 2\\pi k, k\\in Z $$",
+            "4) $$\\pi +2\\pi k, k\\in Z $$"
         ],
-        correctansw: [1]
+        correctansw: [0]
     },
 
 
     {
-        text: "2. Решите уравнение $$\\tg 3x=\\sqrt{3} $$.",
+        text: "2. Решите уравнение $$4\\cos x+4=0 $$.",
         answers: [
-            "1) $$\\frac{\\pi}{9}+\\frac{2\\pi}{3}n, n\\in Z $$",
-            "2) $$\\frac{\\pi}{9}+\\frac{\\pi}{3}n, n\\in Z $$",
-            "3) $$-\\frac{\\pi}{9}+\\frac{2\\pi}{3}n, n\\in Z $$",
-            "4) $$-\\frac{\\pi}{9}+\\frac{\\pi}{3}n, n\\in Z $$"
-        ],
-        correctansw: [1]
-    },
-
-
-    {
-        text: "3. Решите уравнение $$\\cos \\frac{x}{2}=-\\frac{\\sqrt{2}}{2} $$.",
-        answers: [
-            "1) $$\\pm\\frac{\\pi}{2}+4\\pi k, k\\in Z $$",
-            "2) $$(-1)^{k}\\frac{\\pi}{2}+2\\pi k, k\\in Z $$",
-            "3) $$\\pm \\frac{3\\pi}{2}+4\\pi k, k\\in Z $$",
-            "4) $$(-1)^{k+1}\\frac{\\pi}{2}+2\\pi k, k\\in Z $$"
+            "1) $$2\\pi k, k\\in Z $$",
+            "2) $$\\frac{\\pi}{2}+\\pi k, k\\in Z $$",
+            "3) $$\\pi +2\\pi k, k\\in Z $$",
+            "4) $$\\pi k, k\\in Z $$"
         ],
         correctansw: [2]
     },
 
 
     {
-        text: "4. Решите уравнение $$\\sin \\frac{1}{3}=-1 $$.",
+        text: "3. Решите уравнение $$6+6\\sin x=0 $$.",
+        answers: [
+            "1) $$-\\frac{\\pi}{2}+2\\pi k, k\\in Z $$",
+            "2) $$2\\pi k, k\\in Z $$",
+            "3) $$\\pi k, k\\in Z $$",
+            "4) $$\\frac{\\pi}{2}+\\pi k, k\\in Z $$"
+        ],
+        correctansw: [0]
+    },
+
+
+    {
+        text: "4. Решите уравнение $$-9\\cos x+4=4 $$.",
+        answers: [
+            "1) $$2\\pi k, k\\in Z $$",
+            "2) $$\\frac{\\pi}{2}+\\pi k, k\\in Z $$",
+            "3) $$\\pi k, k\in Z $$",
+            "4) $$\\frac{\\pi}{2}+2\\pi k, k\\in Z $$"
+        ],
+        correctansw: [1]
+    },
+
+
+    {
+        text: "5. Решите уравнение $$\\sin\\frac{1}{3}x=-1 $$.",
         answers: [
             "1) $$6\\pi k, k\\in Z $$",
             "2) $$(-1)^{k}\\frac{3\\pi}{2}+3\\pi k, k\\in Z $$",
@@ -53,18 +65,57 @@ let quest = [{
         ],
         correctansw: [3]
     },
-
-
     {
-        text: "5. Решите уравнение $$\\tg 2x=1 $$.",
+        text: "6. Решите уравнение $$\\sin 2x=-0,5 $$.",
         answers: [
-            "1) $$\\frac{\\pi}{8}+\\pi n, n\\in Z $$",
-            "2) $$-\\frac{\\pi}{8}+\\pi n, n\\in Z $$",
-            "3) $$\\frac{\\pi}{8}+\\frac{\\pi}{2}n, n\\in Z $$",
-            "4) $$-\\frac{\\pi}{8}+\\frac{\\pi}{2}n, n\\in Z $$"
+            "1) $$\\pm\\frac{\\pi}{3}+4\\pi k, k\\in Z $$",
+            "2) $$(-1)^{k+1}\\frac{\\pi}{12}+\\frac{1}{2}\\pi k, k\\in Z $$",
+            "3) $$\\pm\\frac{\\pi}{12}+\\pi k, k\\in Z $$",
+            "4) $$(-1)^{k+1}\\frac{\\pi}{3}+2\\pi k, k\\in Z $$"
+        ],
+        correctansw: [1]
+    },
+    {
+        text: "7. Решите уравнение $$2\\sin x -1=0 $$.",
+        answers: [
+            "1) $$(-1)^{k}\\frac{\\pi}{6}+2\\pi k, k\\in Z $$",
+            "2) $$(-1)^{k}\\frac{\\pi}{3}+\\pi k, k\\in Z $$",
+            "3) $$(1)^{k}\\frac{\\pi}{6}+\\pi k, k\\in Z $$",
+            "4) $$\\pm\\frac{\\pi}{6}+2\\pi k, k\\in Z "
         ],
         correctansw: [2]
-    }]
+    },
+    {
+        text: "8. Решите уравнение $$2\\sin x- \\sqrt{3}=0$$.",
+        answers: [
+            "1) $$(-1)^{k}\\frac{\\pi}{3}+\\pi k, k\\in Z $$",
+            "2) $$(-1)^{k}\\frac{\\pi}{6}+\\pi k, k\\in Z $$",
+            "3) $$\\pm\\frac{\\pi}{3}+2\\pi k, k\\in Z $$",
+            "4) $$\\pm\\frac{\\pi}{6}+2\\pi k, k\\in Z $$"
+        ],
+        correctansw: [0]
+    },
+    {
+        text: "9. Решите уравнение $$2\\sin x+\\sqrt{2}=0 $$.",
+        answers: [
+            "1) $$\\pm\\frac{3\\pi}{4}+2\\pi k, k\\in Z $$",
+            "2) $$(-1)^{k}\\frac{\\pi}{4}+\\pi k, k\\in Z $$",
+            "3) $$(-1)^{k+1}\\frac{\\pi}{4}+2\\pi k, k\\in Z $$",
+            "4) $$(-1)^{k+1}\\frac{\\pi}{4}+\\pi k, k\\in Z $$"
+        ],
+        correctansw: [3]
+    },
+    {
+        text: "10. Решите уравнение $$\\cos\\frac{1}{2}x=\\frac{\\sqrt{2}}{2} $$.",
+        answers: [
+            "1) $$\\pm\\frac{\\pi}{2}+4\\pi k, k\\in Z $$",
+            "2) $$(-1)^{k}\\frac{\\pi}{2}+2\\pi k, k\\in Z $$",
+            "3) $$\\pm \\frac{3\\pi}{2}+4\\pi k, k\\in Z $$",
+            "4) $$(-1)^{k+1}\\frac{\\pi}{2}+2\\pi k, k\\in Z $$"
+        ],
+        correctansw: [0]
+    }
+]
 
 
 // Функция для создания элемента fragment
