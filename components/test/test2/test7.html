@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
-    <title>Biology</title>
+    <title>Тригонометрия</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/img/CAL-flat.ico">
     <link rel="stylesheet" href="../../../assets/stackstyles/header.css" />
     <link rel="stylesheet" href="../../../assets/stackstyles/sections.css" />
     <link rel="stylesheet" href="../test.css" />
     <link rel="stylesheet" href="../../../assets/stackstyles/katex.min.css" />
 
+    <script src="answers.js"></script>
     <script defer src="../../../js/katex.min.js"></script>
     <script defer src="../../../js/auto-render.min.js"></script>
     <script>
@@ -56,6 +58,11 @@
                         <p>Практический</p>
                     </a>
                 </li>
+                <li class="nav__butt">
+                    <a href="../../handbook/handbook.html">
+                        <p>Справочник</p>
+                    </a>
+                </li>
                 <li class="nav__butt active">
                     <a href="../../test/test.html">
                         <p>Контроля знаний</p>
@@ -79,28 +86,52 @@
             <div class="content__line"></div>
         </div>
 
-        <article class="content__theme left column">
+        <article class="content__theme left row">
             <ul id="test">
                 <li>
-                    <p class="theme_task">1.</p>
+                    <p class="theme_task">1.$$\space 6\sin^2 x-7\sin x-5=0 $$</p>
                 </li>
                 <li>
-                    <p class="theme_task">2.</p>
+                    <p class="theme_task">2.$$\space 3\sin^2 x+10\cos x-10=0 $$</p>
                 </li>
                 <li>
-                    <p class="theme_task">3.</p>
+                    <p class="theme_task">3.$$\space 2\sin^2 x+11\sin x\cos x+14\cos^2 x=0 $$</p>
                 </li>
                 <li>
-                    <p class="theme_task">4.</p>
+                    <p class="theme_task">4.$$\space 3\tg x -5\ctg x+14=0 $$</p>
                 </li>
                 <li>
-                    <p class="theme_task">5.</p>
+                    <p class="theme_task">5.$$\space 10\sin^2 x-\sin 2x=8\cos^2 x $$</p>
                 </li>
                 <li>
-                    <p class="theme_task">6.</p>
+                    <p class="theme_task">6.$$\space 1-6\cos^2 x=2\sin 2x+\cos 2x $$</p>
                 </li>
             </ul>
-            
+            <div class="answ_wrapper">
+                <div class="btn" onclick="answShowHide()">Ответ</div>
+                <div class="answer">
+                    <ul id="test" style="margin: 0;">
+                <li>
+                    <p class="theme_task">1.$$\space (-1)^{n+1}\space\tfrac{\pi}{6}+\pi n \qquad (-\tfrac{1}{2};\tfrac{5}{3}) $$</p>
+                </li>
+                <li>
+                    <p class="theme_task">2.$$\space 2\pi n \qquad (1;\tfrac{7}{3}) $$</p>
+                </li>
+                <li>
+                    <p class="theme_task">3.$$\space -\arctg 2+\pi n;\space -\arctg\tfrac{7}{2}+\pi k $$</p>
+                </li>
+                <li>
+                    <p class="theme_task">4.$$\space -\arctg 5+\pi n;\space \arctg\tfrac{1}{3}+\pi k $$</p>
+                </li>
+                <li>
+                    <p class="theme_task">5.$$\space \tfrac{\pi}{4}+\pi n;\space -\arctg\tfrac{4}{5}+\pi k $$</p>
+                </li>
+                <li>
+                    <p class="theme_task">6.$$\space -\tfrac{\pi}{4}+\pi n;\space \arctg 3+\pi k $$</p>
+                </li>
+            </ul>
+                </div>
+            </div>
         </article>
     </section>
 

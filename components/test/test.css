@@ -6,11 +6,17 @@
 
 #test li {
     width: 900px;
+    margin: 0;
 }
-
+#test > li {
+    padding-top: 17px;
+}
+#test{
+    margin-left: 300px;
+}
 .theme_task {
     color: #545A51;
-    font-size: 17px;
+    font-size: 22px;
     width: 750px;
     text-align: left;
     padding-top: 19px;
@@ -139,6 +145,40 @@
     background-color: rgb(126, 139, 120);
 }
 
+/* answers open/closed */
+
+.btn {
+  width: 125px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EBFFE1;
+  font-size: 25px;
+  background-color: #6ec552;
+  border: 2px solid #17b979;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  user-select: none;
+}
+.btn:hover{
+    background-color: #17b979;
+}
+.answer {
+  display:none;
+}
+.show-answer {
+  display: block;
+}
+.answ_wrapper {
+    width: 900px;
+    margin-top: 21px;
+}
+.content__theme {
+    /*мне не хватило немного высоты, поэтому так*/
+    min-height: 525px;
+}
 
 @media only screen and (max-width: 1199px) {
     .theme__ask,
@@ -149,7 +189,7 @@
         margin-left: 5px;
     }
     #test li {
-        width: 800px;
+        width: 300px;
     }
     .theme__answer {
         margin: 15px 0px 0px 34px;
@@ -183,7 +223,7 @@
         margin-left: 5px;
     }
     #test li {
-        width: 900px;
+        width: 500px;
     }
     .theme__answer {
         margin: 15px 0px 0px 30px;
@@ -215,7 +255,7 @@
         font-size: 25px;
     }
     #test li {
-        width: 1500px;
+        width: 800px;
     }
     .theme__ask {
         margin-left: 5px;
